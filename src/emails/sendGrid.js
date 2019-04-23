@@ -1,5 +1,5 @@
 const sgMail = require('@sendgrid/mail')
-const sgAPIKey = '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'
+const sgAPIKey = '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'
 
 sgMail.setApiKey(sgAPIKey)
 
@@ -11,7 +11,7 @@ const sendVerify = (username, name, email) => {
         html: `<h1><a href='http://localhost:2010/verify?username=${username}'>Klik untuk verifikasi</a></h1>`
     })
 }
- 
+
 module.exports = {
     sendVerify
 }
